@@ -2,6 +2,7 @@ import DigitalClock from './components/DigitalClock'
 import AutoComplete from './components/AutoComplete'
 import Tablist from './components/TabList'
 import Traffic_light from './components/TrafficLight/Traffic_light'
+import Accordian from './components/Accordian'
 
 export default function App() {
   return (
@@ -10,7 +11,8 @@ export default function App() {
         {/* <DigitalClock/> */}
         {/* <AutoComplete/> */}
         {/* <Tablist/> */}
-        <Traffic_light />
+        {/* <Traffic_light /> */}
+        <Accordian/>
       </main>
     </>
   )
