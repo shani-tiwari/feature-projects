@@ -3,6 +3,8 @@ import AutoComplete from './components/AutoComplete'
 import Tablist from './components/TabList'
 import Traffic_light from './components/TrafficLight/Traffic_light'
 import Accordian from './components/Accordian'
+import CDForm from './components/ConfigDrivenForm/CDForm'
+import Form from './components/ConfigDrivenForm/Form'
 
 export default function App() {
   return (
@@ -12,7 +14,10 @@ export default function App() {
         {/* <AutoComplete/> */}
         {/* <Tablist/> */}
         {/* <Traffic_light /> */}
-        <Accordian/>
+        {/* <Accordian/> */}
+        
+        {/* config driven form component */}
+        <Form/>  
       </main>
     </>
   )
