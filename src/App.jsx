@@ -5,6 +5,7 @@ import Traffic_light from './components/TrafficLight/Traffic_light'
 import Accordian from './components/Accordian'
 import CDForm from './components/ConfigDrivenForm/CDForm'
 import Form from './components/ConfigDrivenForm/Form'
+import OL_Circle from './components/overlapping-circle/OL_Circle'
 
 export default function App() {
   return (
@@ -17,7 +18,9 @@ export default function App() {
         {/* <Accordian/> */}
         
         {/* config driven form component */}
-        <Form/>  
+        {/* <Form/>   */}
+
+        <OL_Circle/>
       </main>
     </>
   )
