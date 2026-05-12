@@ -6,11 +6,12 @@ import Accordian from './components/Accordian'
 import CDForm from './components/ConfigDrivenForm/CDForm'
 import Form from './components/ConfigDrivenForm/Form'
 import OL_Circle from './components/overlapping-circle/OL_Circle'
+import MSForm from './components/MultiStepForm/MSForm'
 
 export default function App() {
   return (
     <>
-      <main className='bg-zinc-700 w-screen h-screen flex items-center justify-center'>
+      <main className='bg-zinc-700 w-screen min-h-screen flex items-center justify-center'>
         {/* <DigitalClock/> */}
         {/* <AutoComplete/> */}
         {/* <Tablist/> */}
@@ -20,7 +21,9 @@ export default function App() {
         {/* config driven form component */}
         {/* <Form/>   */}
 
-        <OL_Circle/>
+        {/* <OL_Circle/> */}
+
+        <MSForm />
       </main>
     </>
   )
