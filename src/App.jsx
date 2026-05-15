@@ -7,6 +7,7 @@ import CDForm from './components/ConfigDrivenForm/CDForm'
 import Form from './components/ConfigDrivenForm/Form'
 import OL_Circle from './components/overlapping-circle/OL_Circle'
 import MSForm from './components/MultiStepForm/MSForm'
+import OTP from './components/OTP/OTP'
 
 export default function App() {
   return (
@@ -23,8 +24,14 @@ export default function App() {
 
         {/* <OL_Circle/> */}
 
-        <MSForm />
+        {/* <MSForm /> */}
+
+        <OTP count={4} onOTPComplete={handleOTPComplete} />
       </main>
     </>
   )
+}
+
+function handleOTPComplete(otp){
+  console.log("otp", otp);
 }
