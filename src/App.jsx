@@ -9,6 +9,7 @@ import OL_Circle from './components/overlapping-circle/OL_Circle'
 import MSForm from './components/MultiStepForm/MSForm'
 import OTP from './components/OTP/OTP'
 import ProgressBar from './components/ProgressBar/ProgressBar'
+import TicTacToe from './components/TicTacToe/TicTacToe'
 
 export default function App() {
   return (
@@ -28,7 +29,9 @@ export default function App() {
         {/* <MSForm /> */}
 
         {/* <OTP count={4} onOTPComplete={handleOTPComplete} /> */}
-        <ProgressBar/>
+        {/* <ProgressBar/> */}
+
+        <TicTacToe/>
       </main>
     </>
   )
