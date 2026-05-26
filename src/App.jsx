@@ -11,6 +11,7 @@ import OTP from './components/OTP/OTP'
 import ProgressBar from './components/ProgressBar/ProgressBar'
 import TicTacToe from './components/TicTacToe/TicTacToe'
 import MemoryGame from './components/MemoryGame/MemoryGame'
+import Timer from './components/Timer'
 
 export default function App() {
   return (
@@ -33,7 +34,8 @@ export default function App() {
         {/* <ProgressBar/> */}
 
         {/* <TicTacToe/> */}
-        <MemoryGame />
+        {/* <MemoryGame /> */}
+        <Timer/>
       </main>
     </>
   )
