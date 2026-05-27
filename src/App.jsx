@@ -12,11 +12,13 @@ import ProgressBar from './components/ProgressBar/ProgressBar'
 import TicTacToe from './components/TicTacToe/TicTacToe'
 import MemoryGame from './components/MemoryGame/MemoryGame'
 import Timer from './components/Timer'
+import Modal from './components/Modal'
 
 export default function App() {
+
   return (
     <>
-      <main className='bg-zinc-700 w-screen min-h-screen flex items-center justify-center'>
+      <main className='bg-zinc-700 relative w-screen min-h-dvh flex items-center justify-center gap-4'>
         {/* <DigitalClock/> */}
         {/* <AutoComplete/> */}
         {/* <Tablist/> */}
@@ -35,7 +37,9 @@ export default function App() {
 
         {/* <TicTacToe/> */}
         {/* <MemoryGame /> */}
-        <Timer/>
+        {/* <Timer/> */}
+
+        <Modal />
       </main>
     </>
   )
