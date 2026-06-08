@@ -13,6 +13,7 @@ import TicTacToe from './components/TicTacToe/TicTacToe'
 import MemoryGame from './components/MemoryGame/MemoryGame'
 import Timer from './components/Timer'
 import Modal from './components/Modal'
+import Pagination from './components/pagination/Pagination'
 
 export default function App() {
 
@@ -39,11 +40,22 @@ export default function App() {
         {/* <MemoryGame /> */}
         {/* <Timer/> */}
 
-        <Modal />
+        {/* <Modal /> */}
+
+        {/*  renderProp Design Pattern */}
+        <Pagination data={data} renderRow={function(item){   // passing callback function --- 
+        // ! i'm able to add but not multiple  ---  coz i was sending an string 
+          return <div className="text-white/80"> {item} --- hellp from app </div>
+        }} />
       </main>
     </>
   )
-}
+};
+
+
+// ! const data = Array.from({length: 100}, (_, i) => `${i+1} element`); --- string won't be multiplied
+const data = Array.from({length: 30}, (_, i) => i+1);
+
 
 // function handleOTPComplete(otp){
 //   console.log("otp", otp);
