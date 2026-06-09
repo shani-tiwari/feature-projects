@@ -16,6 +16,7 @@ import Timer from './components/Timer'
 import Modal from './components/Modal'
 import Pagination from './components/pagination/Pagination'
 import Rating from './components/Rating'
+import GridLight from './components/GridLight'
 
 export default function App() {
 
@@ -51,7 +52,10 @@ export default function App() {
         }} /> */}
 
         {/* Rating component */}
-        <Rating value={0} onChange={handleRatingVhange} maxRating={5}  />
+        {/* <Rating value={0} onChange={handleRatingVhange} maxRating={5}  /> */}
+
+
+        <GridLight/>
       </main>
     </>
   )
