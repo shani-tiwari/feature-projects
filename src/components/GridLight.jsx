@@ -56,7 +56,7 @@ export default function GridLight(){
                         {row.map((cell, j) => {
                             const key = `${i}-${j}`;
                             if(stack.has(key)){
-                                return <div className="w-10 h-10 bg-green-500" key={key} />
+                                return <div className="w-10 h-10 bg-green-500" key={key} /> 
                             }
                             return <div 
                             className={`w-10 h-10 ${cell ? 'bg-red-500' : 'bg-blue-500'}`}
