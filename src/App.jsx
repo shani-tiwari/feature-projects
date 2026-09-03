@@ -17,6 +17,7 @@ import Modal from './components/Modal'
 import Pagination from './components/pagination/Pagination'
 import Rating from './components/Rating'
 import GridLight from './components/GridLight'
+import FileExplorer from './components/FileExplorer/FileExp'
 
 export default function App() {
 
@@ -55,7 +56,8 @@ export default function App() {
         {/* <Rating value={0} onChange={handleRatingVhange} maxRating={5}  /> */}
 
 
-        <GridLight/>
+        {/* <GridLight/> */}
+        <FileExplorer/>
       </main>
     </>
   )
