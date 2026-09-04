@@ -20,6 +20,7 @@ function VirtualList({ data, renderRow = () => {} }) {
   const endIdx = startIdx + renderedRowCount;
 
   function handleScroll(e) {
+    // updates the visible data
     setScrollTop(e.target.scrollTop);
   };
 
@@ -30,13 +31,17 @@ function VirtualList({ data, renderRow = () => {} }) {
         style={{ height: listHeight }}
         className="infinite-scroll"
       >
-        <div style={{ height: `${data.length * ROW_HEIGHT}px` }}>
+        {/* add scrollable container of needed heightr*/}
+        <div style={{ height: `${data.length * ROW_HEIGHT}px` }}> 
 
           <div style={{ transform: `translateY(${startIdx * ROW_HEIGHT}px)` }}>
-            {data.slice(startIdx, endIdx).map((d, i) => {
+            {/* slicing data- only render/add fixed no of elements in dom */}
+            {
+              data.slice(startIdx, endIdx).map((d, i) => {  
                 return <div key={i}>{ renderRow(d) }</div>; 
                  // passed function called here, `d` value goes to `row` 
-              })}
+              })
+            }
           </div>
 
         </div>
